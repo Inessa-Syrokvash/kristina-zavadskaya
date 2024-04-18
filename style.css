@@ -245,11 +245,11 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 300px;
-    height: 450px;
+    flex: 1;
+    max-width: 50%;
     color: #3B3E37;
-    padding: 20px;
-    margin: 10px;
+    padding: 25px;
+    margin: 20px;
     border-radius: 8px;
     box-shadow: -1px 0px 15px 2px rgba(132, 138, 65, 0.96);
 }
@@ -314,14 +314,14 @@ html {
     display: flex;
     justify-content: space-between;
     color: #F4EEE8;
-    margin: 60px 60px 40px 80px;
+    margin: 40px 60px 40px 60px;
     flex-wrap: wrap;
 }
 .list-rules {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 20px;
+    padding: 10px;
 }
 .list-rules h2 {
     font-size: calc(var(--index) * 1.1);
@@ -475,12 +475,16 @@ html {
     width: 100%;
 }
 .feedbackImg {
-    flex: 1;
+    width: 50%;
+    background-size: cover;
+}
+.feedbackImg img {
+    width: 100%;
 }
 .container-seven-header {
-    flex: 1;
+    width: 50%;
     color: #F4EEE8;
-    margin: 70px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -742,9 +746,29 @@ html {
 
 
 @media all and (max-width: 950px){
+      /* Container-four Rules */
+    .container-four-text {
+        flex-direction: column;
+        margin: 60px 10px 60px 20px;
+    }
     /* Container-eight Contacts */
     .container-eight-text {
         flex-direction: column;
+    }
+     /* Container-seven Feedback */
+    .container-seven {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedbackImg, .container-seven-header {
+        width: 100%;
+    }
+    .container-seven-header {
+        padding: 15px;
+    }
+     /* Footer */
+    .footer-two {
+        padding: 0px 20px;
     }
 }
 
@@ -829,8 +853,7 @@ html {
     
     /* Container-three Price */
     .cost-one {
-        width: 80%;
-        height: 450px;
+        min-width: 80%;
         padding: 20px;
     }
     .commentary p {
@@ -864,6 +887,9 @@ html {
     /* Container-five Process */
     .container-five {
         margin: 60px 10px;
+    }
+    .container-process-text {
+        flex-direction: column;
     }
     .process {
         min-height: 100px;
@@ -980,15 +1006,17 @@ html {
         flex-direction: column;
         align-items: center;
     }
-    .listUl a, .footer-two a, 
-    .footer-three  p, .footer-bottom {
+    .listUl a {
+        font-size: calc(var(--index) * 1.3);
+        line-height: 30px;
+    }
+    .footer-three  p, .footer-bottom, .footer-two a  {
         font-size: calc(var(--index) * .8);
     }
     .footer-two {
         flex-direction: column;
         align-items: center;
-        line-height: 2px;
-        padding: 5px;
+        padding: 10px 20px;
     }
 }
 
