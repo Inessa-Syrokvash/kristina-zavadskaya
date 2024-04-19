@@ -264,6 +264,11 @@ html {
     font-weight: bold; 
     font-size: calc(var(--index) * 1.4);
 }
+.session {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
 .cost {
     height: 7rem;
     display: flex;
@@ -857,6 +862,9 @@ html {
     }
     
     /* Container-three Price */
+    .container-three-text {
+        flex-direction: column;
+    }
     .cost-one {
         min-width: 90%;
         padding: 20px;
