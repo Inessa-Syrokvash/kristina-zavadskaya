@@ -264,6 +264,11 @@ html {
     font-weight: bold; 
     font-size: calc(var(--index) * 1.4);
 }
+.cost {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+}
 .btnСost button {
     border-radius: 8px;
     border: none;
@@ -853,7 +858,7 @@ html {
     
     /* Container-three Price */
     .cost-one {
-        min-width: 80%;
+        min-width: 90%;
         padding: 20px;
     }
     .commentary p {
@@ -1021,6 +1026,8 @@ html {
 }
 
 @media all and (max-width: 300px) {
-    /* Container-one Psychology */
-     
+     /* Container-three Price */
+    .cost-one {
+        min-width: 95%;
+    }
 }
